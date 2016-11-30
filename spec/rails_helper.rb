@@ -13,6 +13,13 @@ Shoulda::Matchers.configure do |config|
     with.library :rails
   end
 end
+
+RSpec.configure do |config|
+
+   # Include FactoryGirl so we can use 'create' instead of 'FactoryGirl.create'
+   config.include FactoryGirl::Syntax::Methods
+
+end
 # Add additional requires below this line. Rails is not loaded until this point!
 
 # Requires supporting ruby files with custom matchers and macros, etc, in
