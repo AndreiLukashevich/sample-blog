@@ -12,4 +12,12 @@ RSpec.describe Article do
     it { should have_many :comments }
   end
 
+  describe "#subject" do
+    it "return the article title" do
+      article = create(:article, title: 'hello')
+
+      expect(article.subject).to eq 'hello'
+    end
+  end
+
 end
