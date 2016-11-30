@@ -47,9 +47,10 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-gem 'devise'
+gem "devise", '~> 4.0.0.rc1'
 
 group :test, :development do
-  gem "rspec-rails", "~> 2.4"
+  gem 'rspec-rails', '~> 3.5'
   gem "capybara"
+  gem "shoulda-matchers"
 end
