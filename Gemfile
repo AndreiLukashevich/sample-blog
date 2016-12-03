@@ -48,6 +48,7 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem "devise", '~> 4.0.0.rc1'
+gem 'will_paginate', '~> 3.1.0'
 
 group :test, :development do
   gem 'rspec-rails', '~> 3.5'
