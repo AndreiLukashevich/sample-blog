@@ -18,8 +18,14 @@ RSpec.configure do |config|
 
    # Include FactoryGirl so we can use 'create' instead of 'FactoryGirl.create'
    config.include FactoryGirl::Syntax::Methods
+   config.include RSpec::Rails::RequestExampleGroup, type: :feature
+   config.include Capybara::DSL, :type => :request
+   config.include Capybara::DSL, :type => :controller
+   config.include Rails.application.routes.url_helpers
 
 end
+
+
 # Add additional requires below this line. Rails is not loaded until this point!
 
 # Requires supporting ruby files with custom matchers and macros, etc, in

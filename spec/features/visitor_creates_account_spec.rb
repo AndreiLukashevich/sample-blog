@@ -1,8 +1,8 @@
 require 'rails_helper'
-require 'spec_helper'
 
 feature "Account Creation" do
   scenario "allows guest to create account" do
+
     visit new_user_registration_path
 
     fill_in :user_email, :with => 'user@example.com'
